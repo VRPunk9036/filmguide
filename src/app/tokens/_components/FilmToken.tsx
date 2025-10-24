@@ -114,7 +114,11 @@ export default function FilmToken(tokenInfo: TokenInfo): React.ReactElement {
                     </div>
                     <div className="flex justify-between">
                         <span className="text-[#999999]">Chain:</span>
-                        <span className="text-[#E1C586]">{blockChainInfo.name}</span>
+                        <span className="text-[#E1C586]">
+                            <Link target="_blank" href={blockChainInfo.explorerMainpageUrl}>
+                                {blockChainInfo.name}
+                            </Link>
+                        </span>
                     </div>
                 </div>
 
